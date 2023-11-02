@@ -4,3 +4,4 @@
 ![image](https://github.com/pipou-tigrou/League_autologer/assets/143947780/0c79d9c6-2ac6-4135-bdf4-ee859955166a)
 
 store ur username and password on a .txt files in ur pc
+tell me if my code is ass im a begginer dev 🙏
