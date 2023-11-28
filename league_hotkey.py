@@ -21,54 +21,22 @@ def open_riotclient():
 # log me to league account
 
 
-with open('database.txt', 'r') as fichier:
-    lignes = fichier.readlines()
+with open('database.txt', 'r') as files:
+    lines = files.readlines()
 
-if len(lignes) >= 4:
-    username = lignes[0].strip()
-    password = lignes[1].strip()
-    username1 = lignes[2].strip()
-    password2 = lignes[3].strip()
+if len(lines) >= 2:
+    username = lines[0].strip()
+    password = lines[1].strip()
 
+    if len(lines) >= 4:
+        username1 = lines[2].strip()
+        password2 = lines[3].strip()
 
-def account_logger():
-    mouse.move(300, 350)
-    mouse.click()
-    time.sleep(1)
-    keyboard.write(username)
-    mouse.move(300, 420)
-    mouse.click()
-    time.sleep(1)
-    keyboard.write(password)
-    mouse.move(400, 800)
-    mouse.click()
-
-
-def account_logger2():
-    mouse.move(300, 350)
-    mouse.click()
-    time.sleep(1)
-    keyboard.write(username1)
-    mouse.move(300, 420)
-    mouse.click()
-    time.sleep(1)
-    keyboard.write(password2)
-    mouse.move(400, 800)
-    mouse.click()
 
 
 def account1():
-    subprocess.Popen(
-        [
-            "C:\\Riot Games\\Riot Client\\RiotClientServices.exe",
-            "--launch-product=league_of_legends",
-            "--launch-patchline=live",
-        ],
-
-    )
-    time.sleep(7)
-
     mouse.move(300, 350)
+    time.sleep(1)
     mouse.click()
     time.sleep(1)
     keyboard.write(username)
@@ -81,16 +49,6 @@ def account1():
 
 
 def account2():
-    subprocess.Popen(
-        [
-            "C:\\Riot Games\\Riot Client\\RiotClientServices.exe",
-            "--launch-product=league_of_legends",
-            "--launch-patchline=live",
-        ],
-
-    )
-    time.sleep(7)
-
     mouse.move(300, 350)
     mouse.click()
     time.sleep(1)
